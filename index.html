@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let database = [
+        {
+          firstName: "Karen",
+          lastName: "Sasi",
+          number: 1223456,
+          likes: ["movies", "shopping"],
+        },
+        {
+          firstName: "jes",
+          lastName: "loke",
+          number: 5454,
+          likes: ["Music", "Football"],
+        },
+        {
+          firstName: "Kiara",
+          lastName: "Nale",
+          number: 45645,
+          likes: ["Shopping", "Music"],
+        },
+        {
+          firstName: "Andy",
+          lastName: "Simon",
+          number: 54514,
+          likes: ["Movies", "Cricket"],
+        },
+        {
+          firstName: "Pars",
+          lastName: "Jill",
+          number: 464645,
+          likes: ["Game", "Football"],
+        },
+      ];
+      let findName = "Kiara";
+      let findProps = "number";
+
+      for (let i = 0; i < database.length; i++) {
+        if (findName == database[i].firstName)
+          if (database[i][findProps]) {
+            console.log(database[i][findProps]);
+            break;
+          } else {
+            console.log("No such Property");
+          }
+        else {
+          console.log("No such Data");
+        }
+      }
+    </script>
+  </body>
+</html>
